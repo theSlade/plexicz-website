@@ -1,0 +1,237 @@
+/* Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+/* Root */
+:root {
+  --robo: "Roboto", sans-serif;
+  --open: "Open Sans", sans-serif;
+  --pop: 'Poppins', sans-serif;
+  --pap: 'Pattaya', sans-serif;
+}
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 1s;
+}
+
+a:hover {
+  color: #d4d4d4;
+}
+
+.hero-a {
+  padding: 2rem 6rem;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: background 0.6s;
+}
+
+.hero-a:hover {
+  background: #fff;
+  color: #101010;
+}
+
+
+/* NavBar  Section And Hero */
+
+.main-head {
+  background: #131c27;
+  color: #fff;
+}
+
+body {
+ font-family: var(--pop);
+
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+}
+
+
+  .hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("../assets/images/code1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} 
+
+.hero h3 {
+  padding: 5rem;
+  font-size: 2.4rem;
+}
+
+
+/* Explore Section */
+
+#team {
+  min-height: 50vh;
+  background: #131c27;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+
+#team h2 {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 4rem;
+}
+#team h3 {
+  padding: 2.4rem;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+
+/* Mobile Design styles*/
+@media screen and (max-width: 932px) {
+  
+  html {
+    font-size: 50%;
+}
+  nav {
+    text-align: center;
+
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1478px) {
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #team h3 {
+    padding: 2.4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #team h2 {
+    text-align: center;
+  }
+
+  #team h3 {
+    padding: 15rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1636px)  {
+  #team h2 {
+   align-items: center;
+  }
+}
+
+
+/* ICONS */
+
+.fa-question {
+  font-size: 1.4rem;
+}
+
+.fa-users {
+  font-size: 1.5rem;
+}
+
+.fa-hands-helping {
+  font-size: 1.5rem;
+}
